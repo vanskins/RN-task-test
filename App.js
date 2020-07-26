@@ -45,14 +45,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <View style={{ flex: 1 }}>
         <Text
-          style={{
-            marginTop: 15,
-            marginBottom: 15,
-            color: "#b2bec3",
-            textAlign: "center",
-            fontSize: 20,
-            fontWeight: "600",
-          }}
+          style={styles.userLabel}
         >
           user results ({data.length})
         </Text>
@@ -81,4 +74,12 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight || 0,
     backgroundColor: "#dfe6e9",
   },
+  userLabel: {
+    marginTop: 10,
+    marginBottom: 5,
+    color: "#b2bec3",
+    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "600",
+  }
 });
