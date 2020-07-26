@@ -6,11 +6,7 @@ This application is created with react native and Expo.
 - API integration with [https://randomuser.me/api](https://randomuser.me/api)
 
 ### How to run the app
-1. First option
    - Clone the application
-   - cd on the repository and `npm install && npm start`
+   - cd on the repository and `npm install && npm start` or `yarn install && yarn start`
    - open your simulator `IOS` or `Android`.
-2. Second option
-   - Download the expo app on your device.
-   - Scand this QR code.
 
