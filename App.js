@@ -7,6 +7,7 @@ import {
   View,
   FlatList,
   ActivityIndicator,
+  Platform
 } from "react-native";
 import { getUsers } from "./actions";
 import Card from "./components/Card";
@@ -43,6 +44,7 @@ export default function App() {
   };
   return (
     <SafeAreaView style={styles.container}>
+      {Platform.OS === "android" && <View style={styles.android} />}
       <View style={{ flex: 1 }}>
         <Text
           style={styles.userLabel}
@@ -81,5 +83,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 20,
     fontWeight: "600",
+  },
+  android: {
+    marginTop: 22,
   }
 });
